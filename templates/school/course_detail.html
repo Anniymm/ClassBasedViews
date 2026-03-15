@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ course.name }}</title>
+</head>
+<body>
+
+<h1>{{ course.name }}</h1>
+
+<p>{{ course.description }}</p>
+
+<h2>Students</h2>
+
+<ul>
+    {% for student in students %}
+        <li>{{ student.name }} ({{ student.email }})</li>
+    {% empty %}
+        <li>No students enrolled</li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'course-list' %}">Back to Courses</a>
+
+</body>
+</html>
