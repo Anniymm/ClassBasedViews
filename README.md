@@ -7,3 +7,4 @@ python manage.py runserver
 ```
 
 ## MIT License
+mit licenzia chamopullvistvis 
